@@ -1,6 +1,8 @@
 # Vibe 知识大赏 Skill
 
-用代码制作知识科普短片：事实核查 → 文案分镜 → Canvas 动画 → 可选人声与单一 BGM → MP4。
+当前版本：**v1.0.0** · [每版优化说明](CHANGELOG.md) · [版本下载](https://github.com/ilovetochangetheworld/vibevideo/releases/latest)
+
+用代码制作知识科普短片：事实核查 → 文案分镜 → Canvas 动画 → 可选人声与单一 BGM → 有/无 BGM 双版本 MP4。
 
 适用于把概率、机制和因果过程演出来。核心原则是先展示具体物体的变化，再给术语、数字和结论。支持新片制作，也支持修改已有视频的配音或音乐。
 
@@ -20,7 +22,9 @@ GitHub 演示版仅包含原创动画与合成解说，不含第三方 BGM。三
 - 同一场景连续演变，通过主体动作、镜头尺度和结果归组讲解，避免整片只轮流高亮卡片。
 - 默认可用 `zh-CN-YunyangNeural` 云扬男声，逐句合成并检查是否超出时间窗口。
 - 显式管理音轨：一个 BGM、固定音乐增益，默认不随人声突然压低音乐；不混入旧视频声音或引擎底音。
-- 输出 MP4、可修改工程、文案分镜、事实出处和混音检查报告。
+- 新视觉方向先做约10秒小样，比较后扩展；按七个维度记录带时间点的修改意见。
+- 默认输出有/无 BGM 两版 MP4，保留相同画面、旁白和独立事件音，两版人声处理与固定增益一致。
+- 交付可修改工程、文案分镜、事实出处和每版混音检查报告。
 
 ## 安装
 
@@ -63,6 +67,7 @@ python ~/.codex/skills/vibe-knowledge-video/assets/engine/get_fonts.py
 - [讲解与画面](references/story-and-visuals.md)
 - [配音与混音](references/audio.md)：`cues.json`、`mix.json` 格式与命令
 - [引擎与渲染](references/engine.md)
+- [小样筛选与评审](references/iteration-and-review.md)
 
 新建脚本只生成空工程，代理仍需按选题创作文案和动画；不是无需创作即可批量出成片的模板。默认在本地交付，平台发布另行处理。
 
