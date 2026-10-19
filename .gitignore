@@ -7,3 +7,6 @@ projects/
 *.mp4
 *.mp3
 *.wav
+
+# Public demonstration assets
+!demo/*.mp4

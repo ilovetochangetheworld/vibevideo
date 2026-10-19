@@ -4,6 +4,16 @@
 
 适用于把概率、机制和因果过程演出来。核心原则是先展示具体物体的变化，再给术语、数字和结论。支持新片制作，也支持修改已有视频的配音或音乐。
 
+## Demo：别的队
+
+为什么总觉得别的队更快？这条 36 秒样片先演示三种队伍情境，再归纳 `1/3 → 2/3`。下方 GIF 展示中段动画，点击可打开完整 MP4。
+
+[![《别的队》动画预览](demo/preview.gif)](demo/other-queue.mp4)
+
+[▶ 观看完整 Demo（36 秒，1080p，含云扬解说）](demo/other-queue.mp4)
+
+GitHub 演示版仅包含原创动画与合成解说，不含第三方 BGM。三队等可能最快且无并列是模型假设；画面是手工编排的情境示意，不是实测结果。
+
 ## 特点
 
 - 确定性 Canvas 时间线，支持乱序 seek、静帧、转场拼图和并行渲染。
@@ -60,4 +70,4 @@ python ~/.codex/skills/vibe-knowledge-video/assets/engine/get_fonts.py
 
 本仓库原创脚本和文档采用 [MIT License](LICENSE)。Canvas 引擎来自 [HeyChengC/vibe-knowledge-film](https://github.com/HeyChengC/vibe-knowledge-film)，基于提交 `62d51508aad00003dc6209afa80c4b5dc540de59`，保留 [上游原始许可](assets/engine/LICENSE)。渲染器包含本地资源队列、初始化报错及并行子进程退出处理的修正。
 
-没有包含上游参考片、第三方歌曲、用户提供的音频或本地生成的视频。使用者自行提供可使用的配乐；代码许可不授予第三方媒体的使用权。字体各自遵循下载时保存的 OFL 许可。
+没有包含上游参考片、第三方歌曲或用户提供的音频；`demo/` 包含本项目原创动画与合成解说的演示视频。使用者自行提供可使用的配乐；代码许可不授予第三方媒体的使用权。字体各自遵循下载时保存的 OFL 许可。
