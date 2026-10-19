@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+assets/engine/fonts/
+projects/
+*.mp4
+*.mp3
+*.wav

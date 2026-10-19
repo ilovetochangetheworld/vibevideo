@@ -1,0 +1,4 @@
+interface:
+  display_name: "Vibe 知识大赏"
+  short_description: "制作知识科普短片，含分镜、动画、云扬配音与单一背景音乐的平稳混音"
+  default_prompt: "用 $vibe-knowledge-video 制作一条知识科普视频，使用云扬男声和我提供的单一 BGM，先完成约 30 秒样片。"
